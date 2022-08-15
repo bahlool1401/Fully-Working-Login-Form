@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <main>
+        <div class="login">
+            <h2>Login</h2>
+            <section class="form">
+                <div class="user">
+                    <input type="text" name="" required autocomplete="off" id="userName">
+                    <label>Username</label>
+                </div>
+                <div class="user">
+                    <input type="password" name="" required autocomplete="off" id="passWord">
+                    <label>Password</label>
+                </div>
+                <button id="enter">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </button>
+            </section>
+        </div>
+        <div class="example">
+            <h2>some of users</h2>
+            <ul>
+                <li><i class="bi bi-person-fill"></i><b>first user :</b></li>
+                <li>User : redpanda428</li>
+                <li>Pass : corinne</li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-person-fill"></i><b>second user :</b></li>
+                <li>User : orangegorilla195</li>
+                <li>Pass : champ</li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-person-fill"></i><b>third user :</b></li>
+                <li>User : orangebird275</li>
+                <li>Pass : basset</li>
+            </ul>
+        </div>
+        <div id="success">
+            <h2><i class="bi bi-bag-check"></i> Success</h2>
+        </div>
+
+        <div id="error">
+            <h2><i class="bi bi-bag-x"></i> Error</h2>
+            <h3>Invalid password or username</h3>
+        </div>
+
+        <!-- <div id="loading"><h2>loading <span>.</span><span>.</span><span>.</span></h2></div> -->
+        <div class="loading">
+            <img src='https://flevix.com/wp-content/uploads/2019/07/Curve-Loading.gif'>
+        </div>
+
+
+        <section id="result">
+            <div>
+                <div>
+                    <figure id="userImg">
+                        <img alt="">
+                    </figure>
+                </div>
+                <section>
+                    <h2 id="name"><b><i class="bi bi-person-fill"></i> User's name :</b></h2>
+                    <h2 id="gend"><i class="bi bi-person-hearts"></i><b> User's Gender :</b></h2>
+                    <h2 id="age"><i class="bi bi-hourglass"></i><b> User's Age :</b></h2>
+                    <h2 id="email"><i class="bi bi-envelope-paper"></i><b> User's Email :</b></h2>
+                    <h2 id="phone"><i class="bi bi-telephone"></i><b> User's Phone :</b></h2>
+                    <h2 id="country"><i class="bi bi-patch-exclamation"></i><b> User's Country :</b></h2>
+                    <h2 id="address"><i class="bi bi-pencil-square"></i><b> User's Address :</b></h2>
+                </section>
+                <div>
+                    <button id="back">Back Home</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="src/script/login.js"></script>
+
+</html>
